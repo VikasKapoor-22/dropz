@@ -93,6 +93,10 @@ body {
     color: #FFFFFF;
 }
 
+.accordin-container {
+    max-width: 960px;
+}
+
 .accordion-item {
     background-color: none;
     /* border: 1px solid #49FF06; */
