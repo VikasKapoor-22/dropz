@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Josefin+Sans&family=Montserrat:wght@600&family=Poppins:wght@200;300;500&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("../image/png/bgblack.png");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Comfortaa',
+        cursive;
+}
+
+.card-bg-color {
+    border-radius: 18px;
+    background: linear-gradient(170.1deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+
+}
+
+:root {
+    /* ============font-size=========== */
+    --fs-xl: 48px;
+    --fs-lg: 28px;
+    --fs-md: 24px;
+    --fs-sm: 18px;
+
+    /* =============font-color============ */
+    --color-white: #ffffff;
+    --color-white: #ffffff;
+    --color-white: #ffffff;
+    --color-white: #ffffff;
+}
+
+.fs-xl {
+    font-size: var(--fs-xl);
+}
+
+.fs-lg {
+    font-size: var(--fs-lg);
+}
+
+.fs-md {
+    font-size: var(--fs-md);
+}
+
+.fs-sm {
+    font-size: var(--fs-sm);
+}
+
+.font-weight-700 {
+    font-weight: 700px;
+}
+
+.font-weight-600 {
+    font-weight: 600px;
+}
+
+.font-weight-500 {
+    font-weight: 500px;
+}
+
+/* accordion section */
+.accordion-button:not(.collapsed) {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: none;
+}
+
+.accordion-button {
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid #49FF06;
+    border-bottom: none;
+    border-color: #49FF06 !important;
+    border-radius: 5px;
+}
+
+.accordion-button:focus {
+    border-color: white;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+.accordion-item {
+    background-color: none;
+    /* border: 1px solid #49FF06; */
+    border-radius: 5px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='grey'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+}
+
+.earth {
+    right: 0;
+    z-index: -1;
+}
+
+.h-100vh {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.robot {
+    left: 0;
+}
+
+.earth-grey {
+    right: 0;
+    bottom: 17%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
