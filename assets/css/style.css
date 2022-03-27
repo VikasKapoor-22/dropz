@@ -32,6 +32,8 @@ body {
 
 :root {
     /* ============font-size=========== */
+    --fs-3xl: 145px;
+    --fs-2xl: 84px;
     --fs-xl: 48px;
     --fs-lg: 28px;
     --fs-md: 24px;
@@ -41,7 +43,15 @@ body {
     --color-white: #ffffff;
     --color-success: #43A320;
     --color-white: #ffffff;
-    --color-white: #ffffff;
+    --color-white: white;
+}
+
+.fs-3xl {
+    font-size: var(--fs-3xl);
+}
+
+.fs-2xl {
+    font-size: var(--fs-2xl);
 }
 
 .fs-xl {
@@ -58,6 +68,10 @@ body {
 
 .fs-sm {
     font-size: var(--fs-sm);
+}
+
+.fw-bold {
+    font-weight: bold;
 }
 
 .font-weight-700 {
