@@ -3,8 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    text-decoration: none;
+    list-style-type: none !important;
+    text-decoration: none !important;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -23,6 +23,13 @@ body {
     background: linear-gradient(170.1deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
 }
 
+.hero-section-bg-image {
+    background-image: url("../image/png/hero-section-bg.png");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
 :root {
     /* ============font-size=========== */
     --fs-xl: 48px;
@@ -32,7 +39,7 @@ body {
 
     /* =============font-color============ */
     --color-white: #ffffff;
-    --color-white: #ffffff;
+    --color-success: #43A320;
     --color-white: #ffffff;
     --color-white: #ffffff;
 }
@@ -63,6 +70,28 @@ body {
 
 .font-weight-500 {
     font-weight: 500px;
+}
+
+.btn-bg-success {
+    background: var(--color-success);
+}
+
+.nav-btn {
+    padding: 11px 22px;
+    display: inline-block;
+}
+
+.nav-btn::before {
+    position: absolute;
+    content: " ";
+    border: 1px solid rgba(255, 255, 255, 1);
+    /* border-radius: 48px; */
+    border-top: none;
+    border-left: none;
+    left: 6px;
+    bottom: -10px;
+    height: 100%;
+    width: 100%;
 }
 
 /* accordion section */
