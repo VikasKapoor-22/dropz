@@ -179,3 +179,32 @@ body {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.navbar-toggler {
+    background-color: white;
+}
+
+/* media query setion */
+@media only screen and (max-width:576px) {
+    .fs-sm-lg {
+        font-size: var(--fs-lg);
+    }
+}
+
+@media only screen and (min-width:576px) {
+    .fs-sm-xlg {
+        font-size: var(--fs-xl);
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .fs-lg-2xl {
+        font-size: var(--fs-2xl);
+
+    }
+
+    .fs-lg-3xl {
+        font-size: var(--fs-3xl);
+
+    }
+}
