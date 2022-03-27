@@ -95,11 +95,11 @@ body {
     display: inline-block;
 }
 
-.nav-btn::before {
+.nav-btn::after {
     position: absolute;
     content: " ";
     border: 1px solid rgba(255, 255, 255, 1);
-    /* border-radius: 48px; */
+    border-radius: 0px 7px 0px 7px;
     border-top: none;
     border-left: none;
     left: 6px;
@@ -107,6 +107,23 @@ body {
     height: 100%;
     width: 100%;
 }
+
+/* nav bottom line */
+.nav-link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background: var(--color-success);
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transform: width 1s;
+
+}
+
 
 /* accordion section */
 .accordion-button:not(.collapsed) {
