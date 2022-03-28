@@ -131,7 +131,7 @@ body {
 .line::before {
     content: " ";
     position: absolute;
-    height: 109px;
+    height: 105px;
     width: 7px;
     background: rgba(67, 163, 32, 1);
     border-radius: 7px;
