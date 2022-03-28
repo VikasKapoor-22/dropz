@@ -98,6 +98,7 @@ body {
 .nav-btn {
     padding: 11px 22px;
     display: inline-block;
+    position: relative;
 }
 
 .nav-btn::after {
@@ -113,19 +114,25 @@ body {
     width: 100%;
 }
 
-/* nav bottom line */
-.nav-link::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0px;
-    background: var(--color-success);
-    transition: width .3s;
+nav ul li a {
+    position: relative;
 }
 
-.nav-link:hover::after {
+/* nav bottom line code */
+nav ul li a::after {
+    content: "";
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 0%;
+    background: var(--color-success);
+    position: absolute;
+    transition: all 200ms linear;
+}
+
+nav ul li a:hover::after {
     width: 100%;
-    transform: width 1s;
 
 }
 
@@ -212,6 +219,29 @@ body {
 
 .navbar-toggler {
     background-color: white;
+}
+
+/* roadmap code */
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    transform: translateX(-50%);
+    background-color: var(--color-white);
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../image/png/star.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    left: -25px;
+    transform: translateY(-30%);
 }
 
 /* media query setion */
