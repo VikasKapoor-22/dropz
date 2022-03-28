@@ -19,8 +19,9 @@ body {
 }
 
 .card-bg-color {
-    border-radius: 18px;
     background: linear-gradient(170.1deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    backdrop-filter: blur(18px);
+    border-radius: 25px;
 }
 
 .hero-section-bg-image {
